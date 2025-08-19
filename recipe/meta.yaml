@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rPref_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rPref/rPref_{{ version }}.tar.gz
-  sha256: 5c38750829772bf55f8b8e2231618a88e9438bd884274f398a754b5758258bfa
+  sha256: b15f662ed76694f32c6dd2dd3c1d94199872705bb00139646d2ae618a46573be
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
